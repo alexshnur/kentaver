@@ -8582,6 +8582,9 @@ a {
   background: no-repeat center center;
   background-size: cover; }
 
+.contacts-map {
+  height: 220px; }
+
 .i {
   display: inline-block;
   width: 32px;
