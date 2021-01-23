@@ -4081,17 +4081,17 @@ input[type="button"].btn-block {
   .nav-tabs .nav-link {
     margin-bottom: -1px;
     border: 1px solid transparent;
-    border-top-left-radius: 0.25rem;
-    border-top-right-radius: 0.25rem; }
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
     .nav-tabs .nav-link:hover, .nav-tabs .nav-link:focus {
-      border-color: #e9ecef #e9ecef #dee2e6; }
+      border-color: transparent; }
     .nav-tabs .nav-link.disabled {
       color: #6c757d;
       background-color: transparent;
       border-color: transparent; }
   .nav-tabs .nav-link.active,
   .nav-tabs .nav-item.show .nav-link {
-    color: #f2f2f2;
+    color: #bdbdbd;
     background-color: #fff;
     border-color: #dee2e6 #dee2e6 #fff; }
   .nav-tabs .dropdown-menu {
@@ -8354,7 +8354,8 @@ body {
 
 body {
   font-family: 'open_sansregular';
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 24px; }
 
 main {
   flex: 1 0 auto;
@@ -8620,6 +8621,23 @@ a {
 .contacts-map {
   height: 220px; }
 
+.font-size-14 {
+  font-size: 14px; }
+
+.nav-tabs .nav-link {
+  font-family: 'montserratbold';
+  text-transform: uppercase;
+  font-size: 12px;
+  border-color: transparent;
+  padding: 12px 24px 10px 24px;
+  color: #171717; }
+  .nav-tabs .nav-link.active {
+    border-color: transparent;
+    border-bottom: 3px solid #ffe924; }
+
+.nav-tabs .nav-item.show .nav-link {
+  border-color: transparent; }
+
 .i {
   display: inline-block;
   width: 32px;
@@ -8797,6 +8815,18 @@ footer nav {
     font-size: 12px; }
   footer .bg-dark {
     font-size: 14px; } }
+
+.product-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 14px;
+  line-height: 21px; }
+  .product-list li {
+    margin-bottom: 21px; }
+    .product-list li:before {
+      content: "\2B25";
+      margin-right: 10px;
+      color: #ffe924; }
 
 .product-item {
   margin-bottom: 50px; }
