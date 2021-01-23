@@ -8548,6 +8548,7 @@ a {
   min-height: 32px;
   padding-left: 0; }
   .color-checkbox .custom-control-label {
+    cursor: pointer;
     width: 32px;
     height: 32px;
     border-radius: 50%; }
@@ -8569,6 +8570,29 @@ a {
       display: block;
       background-color: transparent;
       border-color: #171717; }
+
+.size-checkbox.custom-control {
+  padding-left: 0; }
+
+.size-checkbox .custom-control-input {
+  display: none; }
+  .size-checkbox .custom-control-input:disabled ~ .custom-control-label {
+    border-color: #f2f2f2;
+    background-color: #f2f2f2;
+    color: #dbdbdb; }
+  .size-checkbox .custom-control-input:checked ~ .custom-control-label {
+    background-color: #171717;
+    color: #ffffff; }
+
+.size-checkbox .custom-control-label {
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 19px;
+  height: 40px;
+  padding: 10px;
+  border: 1px solid #171717; }
+  .size-checkbox .custom-control-label:before, .size-checkbox .custom-control-label:after {
+    display: none; }
 
 @media (min-width: 992px) {
   .shadow-lg-lg {
