@@ -8562,6 +8562,16 @@ a {
       border-radius: 50%; }
     .color-checkbox .custom-control-label:after {
       display: none !important; }
+  .color-checkbox .custom-control-input:disabled ~ .custom-control-label {
+    cursor: default; }
+    .color-checkbox .custom-control-input:disabled ~ .custom-control-label:after {
+      top: -5px;
+      left: 15px;
+      display: block !important;
+      height: 43px;
+      width: 2px;
+      background-color: #4f4f4f;
+      transform: rotate(-45deg); }
   .color-checkbox .custom-control-input:checked ~ .custom-control-label {
     width: 24px;
     height: 24px;
@@ -8577,6 +8587,7 @@ a {
 .size-checkbox .custom-control-input {
   display: none; }
   .size-checkbox .custom-control-input:disabled ~ .custom-control-label {
+    cursor: default;
     border-color: #f2f2f2;
     background-color: #f2f2f2;
     color: #dbdbdb; }
