@@ -56,16 +56,96 @@
           <div class="row">
             <div class="col-12 col-lg-6 col-xl-7 mb-5">
               <div class="shadow-lg-lg">
-                <div class="p-lg-5"></div>
+                <div class="p-lg-4">
+                  <p class="h4">1. Спосіб оплати:</p>
+                  <div class="ml-5">
+                    <div class="custom-control custom-radio mb-3">
+                      <input class="custom-control-input" id="ratio1" type="radio" checked name="type1">
+                      <label class="custom-control-label" for="ratio1">Безготівковий розрахунок
+                        <div class="small text-gray-200 mt-2">Оплата карткового рахунку через касу або термінал. Після оформлення заявки та підтвердження його наявності Ви отримуєте всі реквізити для оплати.</div>
+                      </label>
+                    </div>
+                    <div class="custom-control custom-radio mb-3">
+                      <input class="custom-control-input" id="ratio2" type="radio" name="type1">
+                      <label class="custom-control-label" for="ratio2">Online LiqPay (Visa, MasterCard)</label>
+                    </div>
+                  </div>
+                </div>
                 <hr class="my-0">
-                <div class="p-lg-5"></div>
+                <div class="p-lg-4">
+                  <p class="h4">2. Спосіб доставки:</p>
+                  <div class="ml-5">
+                    <div class="row">
+                      <div class="col-8">
+                        <div class="custom-control custom-radio mb-3">
+                          <input class="custom-control-input" id="isBranch" type="radio" checked name="type2">
+                          <label class="custom-control-label" for="isBranch">Нова Пошта до відділення</label>
+                        </div>
+                        <div class="custom-control custom-radio mb-3">
+                          <input class="custom-control-input" id="isHome" type="radio" name="type2">
+                          <label class="custom-control-label" for="isHome">Нова Пошта кур’єром</label>
+                        </div>
+                        <p>Адреса отримання</p>
+                        <div class="form-group">
+                          <label class="text-gray-200 small">Населений пункт</label>
+                          <input class="form-control" type="text" placeholder="Населений пункт отримувача">
+                        </div>
+                        <div class="form-group is-branch">
+                          <label class="text-gray-200 small">Номер відділення</label>
+                          <input class="form-control" type="text" placeholder="Номер відділення">
+                        </div>
+                        <div class="form-group is-home">
+                          <label class="text-gray-200 small">Адреса</label>
+                          <input class="form-control" type="text" placeholder="Вулиця, будинок, квартира">
+                        </div>
+                        <p>Дані отримувача</p>
+                        <div class="form-group">
+                          <label class="text-gray-200 small">Ім’я</label>
+                          <input class="form-control" type="text" placeholder="Вкажіть ім’я отримувача">
+                        </div>
+                        <div class="form-group">
+                          <label class="text-gray-200 small">Прізвище</label>
+                          <input class="form-control" type="text" placeholder="Вкажіть прізвище отримувача">
+                        </div>
+                        <div class="form-group">
+                          <label class="text-gray-200 small">Телефон</label>
+                          <input class="form-control" type="text" placeholder="+38 0ХХ ХХХ ХХ">
+                        </div>
+                        <div class="form-group">
+                          <label class="d-flex justify-content-between text-gray-200 small"><span>Ел. адреса</span><span class="text-right">необов’язково</span></label>
+                          <input class="form-control" type="text" placeholder="Вкажіть адрес електронної пошти">
+                        </div>
+                        <div class="form-group">
+                          <label class="d-flex justify-content-between text-gray-200 small"><span>Коментар</span><span class="text-right">необов’язково</span></label>
+                          <textarea class="form-control" rows="5" placeholder=""></textarea>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-12 col-lg-6 col-xl-5">
               <div class="shadow-lg-lg">
-                <div class="p-lg-5"></div>
+                <div class="p-lg-4">
+                  <p><b class="h4">Разом:</b><span class="text-gray-200"> 3 товари</span></p>
+                  <div class="row justify-content-between row-cols-2">
+                    <p class="col-8 text-gray-200 text-truncate">Чохол для спінінгів  двосекційний напівтвердий двосекційний напівтвердий</p>
+                    <p class="col-4 text-right">2 674 грн</p>
+                    <p class="col-8 text-gray-200 text-truncate">Чохол для спінінгів  двосекційний напівтвердий двосекційний напівтвердий</p>
+                    <p class="col-4 text-right">2 674 грн</p>
+                    <p class="col-8 text-gray-200 text-truncate">Чохол для спінінгів  двосекційний напівтвердий двосекційний напівтвердий</p>
+                    <p class="col-4 text-right">2 674 грн</p>
+                  </div>
+                </div>
                 <hr class="my-0">
-                <div class="p-lg-5">
+                <div class="p-lg-4">
+                  <div class="row justify-content-between row-cols-2 mb-3">
+                    <p class="col text-gray-200">До сплати</p>
+                    <p class="col h3 text-right">4 856 грн</p>
+                    <p class="col text-gray-200">Доставка</p>
+                    <p class="col text-right">Безкоштовна</p>
+                  </div>
                   <div class="small text-center mb-3">Підтверджуючи замовлення ви погоджуєтесь з<a href="#"> політикою конфітенційності</a></div>
                   <div class="text-center"><a class="btn btn-warning shadow mb-3" href="#">Підтверджую замовлення</a></div>
                   <div class="small">Відправка всіх заявок здійснюється після 18-00 в будні дні. Замовлення оброблені в субботу відправляються в понеділок.</div>

@@ -3804,7 +3804,7 @@ input[type="button"].btn-block {
   border-radius: 50%; }
 
 .custom-radio .custom-control-input:checked ~ .custom-control-label::after {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e"); }
+  background-image: none; }
 
 .custom-radio .custom-control-input:disabled:checked ~ .custom-control-label::before {
   background-color: rgba(0, 123, 255, 0.5); }
@@ -8540,6 +8540,10 @@ a {
   border-color: #ffe924;
   background-color: #ffe924; }
 
+.custom-radio .custom-control-input:checked ~ .custom-control-label::before {
+  border-color: #171717;
+  border-width: 2px; }
+
 .color-checkbox {
   min-height: 32px;
   padding-left: 0; }
@@ -8964,4 +8968,13 @@ footer nav {
   opacity: 1; }
   .carousel-indicators li.active {
     background-color: #ffe924; }
+
+.cart-product-img {
+  width: 76px;
+  height: 116px;
+  background: no-repeat center center;
+  background-size: cover; }
+
+.is-branch, .is-home {
+  display: none; }
 
