@@ -8601,7 +8601,7 @@ a {
     cursor: default;
     border-color: #f2f2f2;
     background-color: #f2f2f2;
-    color: #dbdbdb; }
+    color: #171717; }
   .size-checkbox .custom-control-input:checked ~ .custom-control-label {
     background-color: #171717;
     color: #ffffff; }
@@ -8726,7 +8726,8 @@ a {
     position: static !important;
     transform: none !important;
     border-radius: 0;
-    border: 0; }
+    border: 0;
+    box-shadow: none; }
   .dropdown-item {
     font-size: 12px;
     font-family: 'montserratbold';
