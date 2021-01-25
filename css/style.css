@@ -8779,7 +8779,10 @@ input::-webkit-inner-spin-button {
   display: inline-block;
   margin-left: 10px; }
   .header-lang a:not([href]) {
-    color: #bdbdbd; }
+    color: #bdbdbd !important;
+    cursor: default; }
+  .header-lang a:hover {
+    color: #bab534; }
 
 .header-phone {
   font-size: 10px;
@@ -8844,6 +8847,10 @@ footer nav {
     font-size: 12px; }
   footer .bg-dark {
     font-size: 14px; } }
+
+.product-stars-container .rating-stars-container {
+  font-size: 24px !important;
+  margin-bottom: 0 !important; }
 
 .product-galery {
   margin-right: -4px;
