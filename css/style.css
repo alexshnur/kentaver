@@ -8515,6 +8515,9 @@ a {
   padding: 12px 16px;
   line-height: 21px; }
 
+.form-group label {
+  margin-bottom: 3px; }
+
 .input-group .form-control {
   border-right: none; }
   .input-group .form-control:focus + .input-group-append .btn {
@@ -8586,7 +8589,8 @@ a {
   .color-checkbox .custom-control-input:checked ~ .custom-control-label {
     width: 24px;
     height: 24px;
-    margin: 4px; }
+    margin: 4px;
+    cursor: default; }
     .color-checkbox .custom-control-input:checked ~ .custom-control-label:before {
       display: block;
       background-color: transparent;
@@ -8604,7 +8608,8 @@ a {
     color: #171717; }
   .size-checkbox .custom-control-input:checked ~ .custom-control-label {
     background-color: #171717;
-    color: #ffffff; }
+    color: #ffffff;
+    cursor: default; }
 
 .size-checkbox .custom-control-label {
   cursor: pointer;
@@ -8647,6 +8652,13 @@ a {
 
 .nav-tabs .nav-item.show .nav-link {
   border-color: transparent; }
+
+input[type='number'] {
+  -moz-appearance: textfield; }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none; }
 
 .i {
   display: inline-block;
@@ -8742,7 +8754,6 @@ a {
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    margin-left: -6px;
     box-shadow: none !important;
     padding: 3px;
     transition: color linear 300ms; }
