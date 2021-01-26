@@ -8622,9 +8622,11 @@ a {
   .size-checkbox .custom-control-label:before, .size-checkbox .custom-control-label:after {
     display: none; }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   main {
-    margin-top: 0; }
+    margin-top: 0; } }
+
+@media (min-width: 992px) {
   .shadow-lg-lg {
     box-shadow: 0 14px 34px rgba(99, 91, 59, 0.2); } }
 
@@ -8821,7 +8823,7 @@ header {
 .search-control .form-control {
   height: 33px; }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   header {
     position: static;
     box-shadow: none; }
