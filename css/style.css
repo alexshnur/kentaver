@@ -8690,6 +8690,8 @@ input::-webkit-inner-spin-button {
     background-image: url(../images/icon_search.svg); }
   .i-hamburger {
     background-image: url(../images/hamburger.svg); }
+  .i-filter {
+    background-image: url(../images/icon_filter.svg); }
   .i-arrow-left {
     background-image: url(../images/icon_arrow-left.svg); }
   .i-arrow-right {
