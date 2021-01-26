@@ -11,7 +11,8 @@
   <body class="d-flex flex-column">
 <header>
   <div class="container">
-    <div class="d-flex justify-content-between"><a class="mr-4" href="index.html"><img src="images/logo.svg" width="176" height="104"></a>
+    <div class="d-flex justify-content-between">
+      <div class="d-flex align-items-center"><a class="d-flex d-md-none mr-3" href="#"><i class="i i-hamburger"></i></a><a class="mr-4 header-logo" href="index.html"><img src="images/logo.svg" width="176" height="104"></a></div>
       <div class="d-none d-lg-block">
         <nav class="header-nav"><a href="about-us.html">Про нас</a><a class="active" href="news.html">Новини</a><a href="#">Співпраця</a><a href="terms.html">Правила обслуговування</a><a href="contacts.html">Контакти</a></nav>
         <div class="position-relative">
@@ -22,17 +23,19 @@
         </div>
       </div>
       <div class="ml-auto">
-        <div class="d-flex align-items-start justify-content-between mt-3"><a class="header-phone" href="tel:+380982556756">+380982556756</a><a class="mx-4" href="cart.html"><i class="i i-cart"></i></a>
+        <div class="d-flex align-items-start justify-content-between mt-3"><a class="d-flex d-md-none" href="#"><i class="i i-search"></i></a><a class="d-none d-md-flex header-phone" href="tel:+380982556756">+380982556756</a><a class="mx-4" href="cart.html"><i class="i i-cart"></i></a>
           <div class="d-none d-md-block header-lang"><a>Укр</a><a href="#">Рус</a></div>
         </div>
-        <form method="GET" action="search.html">
-          <div class="search-control input-group">
-            <input class="form-control border-top-0 border-left-0 shadow-none" type="text" placeholder="Пошук">
-            <div class="input-group-append">
-              <button class="btn btn-search border-top-0 border-right-0" type="submit"><i class="i i-search"></i></button>
+        <div class="d-none d-md-block">
+          <form method="GET" action="search.html">
+            <div class="search-control input-group">
+              <input class="form-control border-top-0 border-left-0 shadow-none" type="text" placeholder="Пошук">
+              <div class="input-group-append">
+                <button class="btn btn-search border-top-0 border-right-0" type="submit"><i class="i i-search"></i></button>
+              </div>
             </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -47,7 +50,7 @@
         </div>
       </section>
       <div class="container">
-        <nav>
+        <nav class="d-none d-md-block">
           <ol class="breadcrumb">
             <li class="breadcrumb-item"><a href="index.html">Головна</a></li>
             <li class="breadcrumb-item active">Поймавший гигантскую форель рыбак установил рекорд</li>
