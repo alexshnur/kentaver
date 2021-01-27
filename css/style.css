@@ -8670,6 +8670,9 @@ input::-webkit-inner-spin-button {
   width: 32px;
   height: 32px;
   background: no-repeat center center; }
+  .i-sm {
+    width: 24px;
+    height: 24px; }
   .i-bill {
     background-image: url(../images/icon_bill.svg); }
   .i-box {
@@ -8682,6 +8685,8 @@ input::-webkit-inner-spin-button {
     background-image: url(../images/icon_cart.svg); }
   .i-phone {
     background-image: url(../images/icon_phone.svg); }
+  .i-phone-light {
+    background-image: url(../images/icon_phone_light.svg); }
   .i-minus {
     background-image: url(../images/icon_minus.svg); }
   .i-plus {
@@ -8781,7 +8786,7 @@ input::-webkit-inner-spin-button {
       box-shadow: none; }
 
 header {
-  z-index: 10;
+  z-index: 110;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   position: fixed;
@@ -8832,6 +8837,62 @@ header {
   .header-logo img {
     width: 176px;
     height: 104px; } }
+
+.navbar-collapse {
+  position: absolute;
+  width: 100%;
+  background-color: #ffffff;
+  left: 0;
+  right: 0;
+  top: 64px;
+  z-index: 1100; }
+
+.mobile-menu {
+  width: 100%;
+  font-family: 'montserratbold';
+  text-transform: uppercase; }
+  .mobile-menu .first-menu {
+    letter-spacing: 0.09em;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    background-color: #171717;
+    font-size: 10px;
+    line-height: 18px; }
+    .mobile-menu .first-menu .mobile-menu-phone {
+      margin-right: 24px; }
+    .mobile-menu .first-menu a {
+      display: block;
+      text-align: center;
+      margin-bottom: 24px;
+      color: #828282; }
+  .mobile-menu .second-menu {
+    background-color: #333333;
+    font-size: 12px;
+    padding: 30px 16px 20px;
+    line-height: 20px; }
+    .mobile-menu .second-menu a {
+      display: block;
+      margin-bottom: 19px;
+      color: #ffe924; }
+
+.mobile-menu-lang {
+  position: absolute;
+  top: -64px;
+  right: 0;
+  background-color: #ffffff;
+  height: 64px;
+  padding-right: 12px;
+  padding-left: 12px; }
+  .mobile-menu-lang .header-lang {
+    height: 64px; }
+    .mobile-menu-lang .header-lang a {
+      margin: 0 14px; }
+
+.navbar-toggler:not(.collapsed) .i-hamburger {
+  display: none; }
+
+.navbar-toggler.collapsed .i-close {
+  display: none; }
 
 footer .bg-secondary {
   padding: 45px 0 30px 0;

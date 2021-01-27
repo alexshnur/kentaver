@@ -12,7 +12,21 @@
 <header>
   <div class="container">
     <div class="d-flex justify-content-between">
-      <div class="d-flex align-items-center"><a class="d-flex d-md-none mr-3" href="#"><i class="i i-hamburger"></i></a><a class="mr-4 header-logo" href="index.html"><img src="images/logo.svg" width="176" height="104"></a></div>
+      <div class="d-flex align-items-center">
+        <div class="d-flex d-md-none"><a class="mr-3 navbar-toggler collapsed" href="#" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><i class="i i-hamburger"></i><i class="i i-close"></i></a>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="mobile-menu">
+              <div class="mobile-menu-lang">
+                <div class="header-lang d-flex align-items-center"><a>Укр</a><a href="#">Рус</a></div>
+              </div>
+              <nav class="first-menu"><a href="about-us.html">Про нас</a><a class="active" href="news.html">Новини</a><a href="#">Співпраця</a><a href="terms.html">Правила обслуговування</a><a href="contacts.html">Контакти</a><a class="text-white mobile-menu-phone d-flex align-items-center justify-content-center" href="tel:+380982556756"><i class="i i-phone-light i-sm"></i>+380982556756</a></nav>
+              <nav class="second-menu">
+                <p class="text-center text-white">Каталог товарів</p><a href="#">Чохли для вудилищ та спінінгів</a><a href="#">Чохли для катушок та рибальських снастей</a><a href="#">Рибацькі сумки</a><a href="#">Чохли для рушниць і АКС</a><a href="#">Головні убори для активного відпочинку</a>
+              </nav>
+            </div>
+          </div>
+        </div><a class="mr-4 header-logo" href="index.html"><img src="images/logo.svg" width="176" height="104"></a>
+      </div>
       <div class="d-none d-lg-block">
         <nav class="header-nav"><a href="about-us.html">Про нас</a><a class="active" href="news.html">Новини</a><a href="#">Співпраця</a><a href="terms.html">Правила обслуговування</a><a href="contacts.html">Контакти</a></nav>
         <div class="position-relative">
@@ -23,7 +37,15 @@
         </div>
       </div>
       <div class="ml-auto">
-        <div class="d-flex align-items-start justify-content-between mt-3"><a class="d-flex d-md-none" href="#"><i class="i i-search"></i></a><a class="d-none d-md-flex header-phone" href="tel:+380982556756">+380982556756</a><a class="mx-4" href="cart.html"><i class="i i-cart"></i></a>
+        <div class="d-flex align-items-start justify-content-between mt-3">
+          <div class="d-flex d-md-none"><a href="#" data-toggle="tooltip" title="test" data-trigger="click"><i class="i i-search"></i></a>
+            <div class="tooltip bs-tooltip-top" role="tooltip">
+              <div class="arrow"></div>
+              <div class="tooltip-inner">
+                <p>test</p>
+              </div>
+            </div>
+          </div><a class="d-none d-md-flex header-phone" href="tel:+380982556756">+380982556756</a><a class="mx-4" href="cart.html"><i class="i i-cart"></i></a>
           <div class="d-none d-md-block header-lang"><a>Укр</a><a href="#">Рус</a></div>
         </div>
         <div class="d-none d-md-block">
