@@ -38,8 +38,8 @@
       </div>
       <div class="ml-auto">
         <div class="d-flex align-items-start justify-content-between mt-3">
-          <div class="d-flex d-md-none"><a href="#" data-toggle="tooltip" title="test" data-trigger="click"><i class="i i-search"></i></a>
-            <div class="tooltip bs-tooltip-top" role="tooltip">
+          <div class="d-flex d-md-none"><a href="#" data-toggle="popover" data-placement="bottom"><i class="i i-search"></i></a>
+            <div class="tooltip bs-tooltip-top d-none" role="tooltip">
               <div class="arrow"></div>
               <div class="tooltip-inner">
                 <p>test</p>
@@ -48,7 +48,7 @@
           </div><a class="d-none d-md-flex header-phone" href="tel:+380982556756">+380982556756</a><a class="mx-4" href="cart.html"><i class="i i-cart"></i></a>
           <div class="d-none d-md-block header-lang"><a>Укр</a><a href="#">Рус</a></div>
         </div>
-        <div class="d-none d-md-block">
+        <div class="d-none d-md-block" id="search">
           <form method="GET" action="search.html">
             <div class="search-control input-group">
               <input class="form-control border-top-0 border-left-0 shadow-none" type="text" placeholder="Пошук">
@@ -79,97 +79,97 @@
       <section class="mb-5">
         <div class="container">
           <div class="shadow-lg-lg">
-            <div class="px-md-5 pt-md-5">
-              <div class="row align-items-center justify-content-between mb-4 pb-4 row-cols-2 row-cols-md border-bottom">
+            <div class="px-lg-5 pt-lg-5">
+              <div class="row align-items-center justify-content-between mb-4 pb-4 row-cols-2 row-cols-lg cart-item-container">
                 <div class="col-12 col-md-auto text-right"><a href="#"><i class="i i-close"></i></a></div>
-                <div class="col-auto mb-4 mb-md-0">
+                <div class="col-auto mb-4 mb-lg-0">
                   <div class="cart-product-img" style="background-image: url(images/product-image.jpg)"></div>
                 </div>
-                <div class="col-8 col-md mb-4 mb-md-0"><span>Чохол для спінінгів  двосекційний напівтвердий двосекційний напівтвердий</span></div>
-                <div class="col-6 col-md-2">
+                <div class="col-8 col-lg mb-4 mb-lg-0"><span>Чохол для спінінгів  двосекційний напівтвердий двосекційний напівтвердий</span></div>
+                <div class="col-6 col-xl-2">
                   <div class="d-flex align-items-center justify-content-center"><a class="line-height-0" href="#"><i class="i i-minus"></i></a>
                     <div class="mx-3">
                       <input class="px-1 form-control text-center" type="number" value="1">
                     </div><a class="line-height-0" href="#"><i class="i i-plus"></i></a>
                   </div>
                 </div>
-                <div class="col-6 col-md-2 text-right">
+                <div class="col-6 col-xl-2 text-right">
                   <div class="h3 my-0">2 674 грн</div>
                 </div>
               </div>
-              <div class="row align-items-center justify-content-between mb-4 pb-4 row-cols-2 row-cols-md border-bottom">
+              <div class="row align-items-center justify-content-between mb-4 pb-4 row-cols-2 row-cols-lg cart-item-container">
                 <div class="col-12 col-md-auto text-right"><a href="#"><i class="i i-close"></i></a></div>
-                <div class="col-auto mb-4 mb-md-0">
+                <div class="col-auto mb-4 mb-lg-0">
                   <div class="cart-product-img" style="background-image: url(images/product-image.jpg)"></div>
                 </div>
-                <div class="col-8 col-md mb-4 mb-md-0"><span>Чохол для спінінгів  двосекційний напівтвердий двосекційний напівтвердий</span></div>
-                <div class="col-6 col-md-2">
+                <div class="col-8 col-lg mb-4 mb-lg-0"><span>Чохол для спінінгів  двосекційний напівтвердий двосекційний напівтвердий</span></div>
+                <div class="col-6 col-xl-2">
                   <div class="d-flex align-items-center justify-content-center"><a class="line-height-0" href="#"><i class="i i-minus"></i></a>
                     <div class="mx-3">
                       <input class="px-1 form-control text-center" type="number" value="1">
                     </div><a class="line-height-0" href="#"><i class="i i-plus"></i></a>
                   </div>
                 </div>
-                <div class="col-6 col-md-2 text-right">
+                <div class="col-6 col-xl-2 text-right">
                   <div class="h3 my-0">2 674 грн</div>
                 </div>
               </div>
-              <div class="row align-items-center justify-content-between mb-4 pb-4 row-cols-2 row-cols-md border-bottom">
+              <div class="row align-items-center justify-content-between mb-4 pb-4 row-cols-2 row-cols-lg cart-item-container">
                 <div class="col-12 col-md-auto text-right"><a href="#"><i class="i i-close"></i></a></div>
-                <div class="col-auto mb-4 mb-md-0">
+                <div class="col-auto mb-4 mb-lg-0">
                   <div class="cart-product-img" style="background-image: url(images/product-image.jpg)"></div>
                 </div>
-                <div class="col-8 col-md mb-4 mb-md-0"><span>Чохол для спінінгів  двосекційний напівтвердий двосекційний напівтвердий</span></div>
-                <div class="col-6 col-md-2">
+                <div class="col-8 col-lg mb-4 mb-lg-0"><span>Чохол для спінінгів  двосекційний напівтвердий двосекційний напівтвердий</span></div>
+                <div class="col-6 col-xl-2">
                   <div class="d-flex align-items-center justify-content-center"><a class="line-height-0" href="#"><i class="i i-minus"></i></a>
                     <div class="mx-3">
                       <input class="px-1 form-control text-center" type="number" value="1">
                     </div><a class="line-height-0" href="#"><i class="i i-plus"></i></a>
                   </div>
                 </div>
-                <div class="col-6 col-md-2 text-right">
+                <div class="col-6 col-xl-2 text-right">
                   <div class="h3 my-0">2 674 грн</div>
                 </div>
               </div>
-              <div class="row align-items-center justify-content-between mb-4 pb-4 row-cols-2 row-cols-md border-bottom">
+              <div class="row align-items-center justify-content-between mb-4 pb-4 row-cols-2 row-cols-lg cart-item-container">
                 <div class="col-12 col-md-auto text-right"><a href="#"><i class="i i-close"></i></a></div>
-                <div class="col-auto mb-4 mb-md-0">
+                <div class="col-auto mb-4 mb-lg-0">
                   <div class="cart-product-img" style="background-image: url(images/product-image.jpg)"></div>
                 </div>
-                <div class="col-8 col-md mb-4 mb-md-0"><span>Чохол для спінінгів  двосекційний напівтвердий двосекційний напівтвердий</span></div>
-                <div class="col-6 col-md-2">
+                <div class="col-8 col-lg mb-4 mb-lg-0"><span>Чохол для спінінгів  двосекційний напівтвердий двосекційний напівтвердий</span></div>
+                <div class="col-6 col-xl-2">
                   <div class="d-flex align-items-center justify-content-center"><a class="line-height-0" href="#"><i class="i i-minus"></i></a>
                     <div class="mx-3">
                       <input class="px-1 form-control text-center" type="number" value="1">
                     </div><a class="line-height-0" href="#"><i class="i i-plus"></i></a>
                   </div>
                 </div>
-                <div class="col-6 col-md-2 text-right">
+                <div class="col-6 col-xl-2 text-right">
                   <div class="h3 my-0">2 674 грн</div>
                 </div>
               </div>
-              <div class="row align-items-center justify-content-between mb-4 pb-4 row-cols-2 row-cols-md border-bottom">
+              <div class="row align-items-center justify-content-between mb-4 pb-4 row-cols-2 row-cols-lg cart-item-container">
                 <div class="col-12 col-md-auto text-right"><a href="#"><i class="i i-close"></i></a></div>
-                <div class="col-auto mb-4 mb-md-0">
+                <div class="col-auto mb-4 mb-lg-0">
                   <div class="cart-product-img" style="background-image: url(images/product-image.jpg)"></div>
                 </div>
-                <div class="col-8 col-md mb-4 mb-md-0"><span>Чохол для спінінгів  двосекційний напівтвердий двосекційний напівтвердий</span></div>
-                <div class="col-6 col-md-2">
+                <div class="col-8 col-lg mb-4 mb-lg-0"><span>Чохол для спінінгів  двосекційний напівтвердий двосекційний напівтвердий</span></div>
+                <div class="col-6 col-xl-2">
                   <div class="d-flex align-items-center justify-content-center"><a class="line-height-0" href="#"><i class="i i-minus"></i></a>
                     <div class="mx-3">
                       <input class="px-1 form-control text-center" type="number" value="1">
                     </div><a class="line-height-0" href="#"><i class="i i-plus"></i></a>
                   </div>
                 </div>
-                <div class="col-6 col-md-2 text-right">
+                <div class="col-6 col-xl-2 text-right">
                   <div class="h3 my-0">2 674 грн</div>
                 </div>
               </div>
             </div>
-            <hr class="mb-0 d-none d-md-block">
-            <div class="p-md-5 row align-items-center justify-content-end">
-              <div class="col-12 col-md-auto mr-md-5 text-right">
-                <div class="d-flex align-items-center justify-content-between mb-3 mb-md-0">
+            <hr class="mb-0 d-none d-lg-block">
+            <div class="p-sm-5 row align-items-center justify-content-end">
+              <div class="col-12 col-sm-auto mr-sm-5 text-right">
+                <div class="d-flex align-items-center justify-content-between mb-3 mb-sm-0 flex-sm-column">
                   <p class="mb-0 text-gray-200">Всього до сплати:</p>
                   <div class="h2 mb-0">4 856 грн</div>
                 </div>

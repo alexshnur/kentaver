@@ -8894,6 +8894,19 @@ header {
 .navbar-toggler.collapsed .i-close {
   display: none; }
 
+.popover {
+  max-width: 100%;
+  width: 100%;
+  border: 0;
+  left: 4px;
+  border-radius: 0;
+  padding: 15px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2); }
+
+.bs-popover-bottom > .arrow::before, .bs-popover-auto[x-placement^="bottom"] > .arrow::before, .bs-popover-auto[x-placement^="bottom"] > .arrow::before {
+  border-bottom-color: rgba(0, 0, 0, 0.05);
+  filter: blur(2px); }
+
 footer .bg-secondary {
   padding: 45px 0 30px 0;
   font-size: 14px;
@@ -9230,6 +9243,13 @@ footer nav {
   height: 116px;
   background: no-repeat center center;
   background-size: cover; }
+
+.cart-item-container {
+  border-bottom: 1px solid #dee2e6; }
+
+@media (min-width: 992px) {
+  .cart-item-container {
+    border-bottom: none; } }
 
 .is-branch, .is-home {
   display: none; }
