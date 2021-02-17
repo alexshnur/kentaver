@@ -9025,11 +9025,11 @@ footer nav {
   .product-item-image {
     background: no-repeat center center;
     background-size: cover;
-    height: 500px;
+    height: 203px;
     position: absolute;
     width: 100%; }
     .product-item-image-container {
-      height: 500px;
+      height: 203px;
       position: relative; }
   .product-item-none-text {
     display: none; }
@@ -9093,6 +9093,10 @@ footer nav {
     line-height: 16px; }
 
 @media (min-width: 768px) {
+  .product-item-image {
+    height: 500px; }
+    .product-item-image-container {
+      height: 500px; }
   .product-item-none .product-item-none-text {
     font-size: 16px; }
   .catalog-result .product-item-image {
