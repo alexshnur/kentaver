@@ -8652,6 +8652,10 @@ section.new-section {
   background-size: cover; }
 
 @media (min-width: 768px) {
+  .w-md-100 {
+    width: 100%; }
+  .w-md-auto {
+    width: auto !important; }
   main {
     margin-top: 0; }
   .new-section {
@@ -8659,7 +8663,13 @@ section.new-section {
 
 @media (min-width: 992px) {
   .shadow-lg-lg {
-    box-shadow: 0 14px 34px rgba(99, 91, 59, 0.2); } }
+    box-shadow: 0 14px 34px rgba(99, 91, 59, 0.2); }
+  .w-lg-auto {
+    width: auto !important; } }
+
+@media (min-width: 1200px) {
+  .w-xl-auto {
+    width: auto !important; } }
 
 .line-height-0 {
   line-height: 0; }
