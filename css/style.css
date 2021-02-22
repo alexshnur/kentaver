@@ -9183,16 +9183,18 @@ footer nav {
   display: block; }
 
 .main-image-menu {
-  height: 502px;
+  height: 245px;
   list-style: none;
-  animation: slider 3s linear; }
+  padding: 0;
+  margin: 0; }
   .main-image-menu-section {
     position: relative;
-    height: 502px;
+    height: 245px;
     overflow: hidden; }
   .main-image-menu li {
     height: 110px;
-    margin-top: auto; }
+    margin-top: auto;
+    display: none; }
     .main-image-menu li a {
       position: relative;
       bottom: -15px;
@@ -9222,12 +9224,24 @@ footer nav {
       opacity: 0;
       z-index: -1;
       transition: opacity linear 300ms, z-index linear 300ms; }
-    .main-image-menu li:hover a, .main-image-menu li.active a {
-      bottom: 0;
-      background-color: #FFE924; }
-    .main-image-menu li:hover .img, .main-image-menu li.active .img {
-      opacity: 1;
-      z-index: 1; }
+    .main-image-menu li:hover, .main-image-menu li.active {
+      display: block; }
+      .main-image-menu li:hover a, .main-image-menu li.active a {
+        bottom: 0;
+        background-color: #FFE924; }
+      .main-image-menu li:hover .img, .main-image-menu li.active .img {
+        opacity: 1;
+        z-index: 1; }
+
+@media (min-width: 768px) {
+  .main-image-menu {
+    height: 502px; }
+    .main-image-menu-section {
+      height: 502px; }
+    .main-image-menu li {
+      display: block; }
+      .main-image-menu li.active {
+        display: block; } }
 
 .bottom-carousel-title {
   font-family: 'open_sansbold';
