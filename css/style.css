@@ -9056,6 +9056,12 @@ footer nav {
     .product-item-none .product-item-none-text b {
       color: #ffffff; }
 
+.slick-slide {
+  opacity: 0.3; }
+
+.slick-current {
+  opacity: 1; }
+
 .catalog-result .product-item-image {
   height: 203px; }
   .catalog-result .product-item-image-container {
