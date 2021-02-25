@@ -31,7 +31,7 @@
             <nav class="header-nav"><a href="about-us.html">Про нас</a><a class="active" href="news.html">Новини</a><a href="#">Співпраця</a><a href="terms.html">Правила обслуговування</a><a href="contacts.html">Контакти</a></nav>
             <div class="position-relative">
               <div class="dropdown d-inline-block ml-0 mt-xl-3">
-                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Каталог товарів</button>
+                <button class="btn dropdown-toggle dropdown-toggle-menu" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Каталог товарів</button>
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Чохли для вудилищ та спінінгів</a><a class="dropdown-item" href="#">Чохли для катушок та рибальських снастей</a><a class="dropdown-item" href="#">Рибацькі сумки</a><a class="dropdown-item" href="#">Чохли для рушниць і АКС</a><a class="dropdown-item" href="#">Головні убори для активного відпочинку</a></div>
               </div>
             </div>
@@ -80,7 +80,76 @@
             <div class="col-12 col-xl-10 order-1">
               <form class="form-inline mb-4">
                 <div class="d-flex align-items-center justify-content-between w-100 justify-content-md-start">
-                  <div class="d-md-none d-block col-6 col-md-auto pl-0 pl-md-3"><a class="text-body d-flex align-items-center" href="#"><i class="i i-filter mr-2"></i>Фільтри</a></div>
+                  <div class="d-md-none d-block col-6 col-md-auto pl-0 pl-md-3 dropdown position-relative"><a class="text-body d-flex align-items-center dropdown-toggle dropdown-toggle-filter" href="#" data-toggle="dropdown" data-reference="parent"><i class="i i-filter mr-2"></i><i class="i i-close mr-2"></i>Фільтри</a>
+                    <div class="dropdown-menu dropdown-filters">
+                      <form>
+                        <p class="h7 text-uppercase">Колір</p>
+                        <div class="form-row mb-4">
+                          <div class="col-auto mb-2">
+                            <div class="custom-control custom-checkbox color-checkbox">
+                              <input class="custom-control-input" id="filterColor1a" type="checkbox">
+                              <label class="custom-control-label" for="filterColor1a" style="background-color: #333333"></label>
+                            </div>
+                          </div>
+                          <div class="col-auto mb-2">
+                            <div class="custom-control custom-checkbox color-checkbox">
+                              <input class="custom-control-input" id="filterColor2a" type="checkbox">
+                              <label class="custom-control-label" for="filterColor2a" style="background-color: #6F8C58"></label>
+                            </div>
+                          </div>
+                          <div class="col-auto mb-2">
+                            <div class="custom-control custom-checkbox color-checkbox">
+                              <input class="custom-control-input" id="filterColor3a" type="checkbox">
+                              <label class="custom-control-label" for="filterColor3a" style="background-color: #1C3063"></label>
+                            </div>
+                          </div>
+                          <div class="col-auto mb-2">
+                            <div class="custom-control custom-checkbox color-checkbox">
+                              <input class="custom-control-input" id="filterColor4a" type="checkbox">
+                              <label class="custom-control-label" for="filterColor4a" style="background-color: #5B5029"></label>
+                            </div>
+                          </div>
+                          <div class="col-auto mb-2">
+                            <div class="custom-control custom-checkbox color-checkbox">
+                              <input class="custom-control-input" id="filterColor5a" type="checkbox">
+                              <label class="custom-control-label" for="filterColor5a" style="background-color: #ffe924"></label>
+                            </div>
+                          </div>
+                        </div>
+                        <p class="h7 text-uppercase">Ромір</p>
+                        <div class="form-row mb-4">
+                          <div class="col-auto mb-2">
+                            <div class="custom-control custom-checkbox size-checkbox">
+                              <input class="custom-control-input" id="filterSize1a" type="checkbox" name="size" value="135 см">
+                              <label class="custom-control-label" for="filterSize1a">135 см</label>
+                            </div>
+                          </div>
+                          <div class="col-auto mb-2">
+                            <div class="custom-control custom-checkbox size-checkbox">
+                              <input class="custom-control-input" id="filterSize2a" type="checkbox" name="size" value="145 см" checked>
+                              <label class="custom-control-label" for="filterSize2a">145 см</label>
+                            </div>
+                          </div>
+                          <div class="col-auto mb-2">
+                            <div class="custom-control custom-checkbox size-checkbox">
+                              <input class="custom-control-input" id="filterSize3a" type="checkbox" name="size" value="165 см">
+                              <label class="custom-control-label" for="filterSize3a">165 см</label>
+                            </div>
+                          </div>
+                          <div class="col-auto mb-2">
+                            <div class="custom-control custom-checkbox size-checkbox">
+                              <input class="custom-control-input" id="filterSize4a" type="checkbox" name="size" value="200 см">
+                              <label class="custom-control-label" for="filterSize4a">200 см</label>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="custom-control custom-checkbox mb-4">
+                          <input class="custom-control-input" id="filterCheckbox" type="checkbox">
+                          <label class="custom-control-label" for="filterCheckbox">Тільки ті, що є в наявності</label>
+                        </div><a class="btn btn-warning w-100" href="#">застосувати</a>
+                      </form>
+                    </div>
+                  </div>
                   <div class="d-none d-md-block col-auto pl-0">
                     <label>Сортувати</label>
                   </div>
@@ -170,31 +239,31 @@
               <form>
                 <p class="h7 text-uppercase">Колір</p>
                 <div class="form-row mb-4">
-                  <div class="col mb-2">
+                  <div class="col-auto mb-2">
                     <div class="custom-control custom-checkbox color-checkbox">
                       <input class="custom-control-input" id="filterColor1" type="checkbox">
                       <label class="custom-control-label" for="filterColor1" style="background-color: #333333"></label>
                     </div>
                   </div>
-                  <div class="col mb-2">
+                  <div class="col-auto mb-2">
                     <div class="custom-control custom-checkbox color-checkbox">
                       <input class="custom-control-input" id="filterColor2" type="checkbox">
                       <label class="custom-control-label" for="filterColor2" style="background-color: #6F8C58"></label>
                     </div>
                   </div>
-                  <div class="col mb-2">
+                  <div class="col-auto mb-2">
                     <div class="custom-control custom-checkbox color-checkbox">
                       <input class="custom-control-input" id="filterColor3" type="checkbox">
                       <label class="custom-control-label" for="filterColor3" style="background-color: #1C3063"></label>
                     </div>
                   </div>
-                  <div class="col mb-2">
+                  <div class="col-auto mb-2">
                     <div class="custom-control custom-checkbox color-checkbox">
                       <input class="custom-control-input" id="filterColor4" type="checkbox">
                       <label class="custom-control-label" for="filterColor4" style="background-color: #5B5029"></label>
                     </div>
                   </div>
-                  <div class="col mb-2">
+                  <div class="col-auto mb-2">
                     <div class="custom-control custom-checkbox color-checkbox">
                       <input class="custom-control-input" id="filterColor5" type="checkbox">
                       <label class="custom-control-label" for="filterColor5" style="background-color: #ffe924"></label>

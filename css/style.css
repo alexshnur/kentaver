@@ -8807,15 +8807,15 @@ input::-webkit-inner-spin-button {
     box-shadow: none !important;
     padding: 3px;
     transition: color linear 300ms; }
-    .dropdown-toggle:hover {
-      color: #bab534; }
-    .dropdown-toggle:before {
+    .dropdown-toggle-menu:before {
       content: "";
       display: inline-block;
       width: 32px;
       height: 32px;
       background: url(../images/hamburger.svg) no-repeat 0 0;
       margin-right: 4px; }
+    .dropdown-toggle:hover {
+      color: #bab534; }
     .dropdown-toggle:after {
       display: none; }
     .dropdown-toggle:focus {
@@ -9149,7 +9149,7 @@ footer nav {
   min-height: 92px;
   max-height: 92px;
   background-color: #eaeaea;
-  font-size: 12px;
+  font-size: 10px;
   font-family: 'montserratbold';
   text-transform: uppercase;
   color: #000000;
@@ -9179,8 +9179,14 @@ footer nav {
   background-size: cover; }
 
 .review-product-link-title {
-  padding: 16px 49px 16px 16px;
+  padding: 16px 0 16px 16px;
   display: block; }
+
+@media (min-width: 768px) {
+  .review-product-link-container {
+    font-size: 12px; }
+  .review-product-link-title {
+    padding: 16px 0 16px 16px; } }
 
 .main-image-menu {
   height: 245px;
@@ -9316,4 +9322,27 @@ footer nav {
 
 .is-branch, .is-home {
   display: none; }
+
+.dropdown-filters {
+  position: absolute !important;
+  width: 100vw;
+  padding: 65px 16px 20px 16px;
+  margin: -5px -16px 0 -16px;
+  z-index: 100; }
+
+.dropdown-toggle-filter {
+  z-index: 110;
+  position: relative;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-family: 'open_sansregular'; }
+  .dropdown-toggle-filter .i-close {
+    display: none; }
+
+.dropdown.show .dropdown-toggle-filter {
+  font-size: 16px; }
+  .dropdown.show .dropdown-toggle-filter .i-close {
+    display: inline-block; }
+  .dropdown.show .dropdown-toggle-filter .i-filter {
+    display: none; }
 
