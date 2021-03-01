@@ -39,7 +39,15 @@
 	});
 
 	$(document).on('click', '.dropdown-filters', function (e) {
-		console.log('click');
+		e.stopPropagation();
+		return false;
+	});
+
+	$(document).on('click', '.rating-stars-container .fa-star', function(e) {
+		var $this = $(this);
+		var $ratingStarsBlock = $this.closest('.rating-stars-block');
+		var $ratingStars = $ratingStarsBlock.find('.rating-stars');
+		$ratingStars.val($this.attr('data-rating'));
 		e.stopPropagation();
 		return false;
 	});
