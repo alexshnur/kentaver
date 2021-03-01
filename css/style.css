@@ -9451,10 +9451,13 @@ footer nav {
   .dropdown-toggle-filter .i-close {
     display: none; }
 
-.dropdown.show .dropdown-toggle-filter {
-  font-size: 16px; }
-  .dropdown.show .dropdown-toggle-filter .i-close {
-    display: inline-block; }
-  .dropdown.show .dropdown-toggle-filter .i-filter {
-    display: none; }
+.form-filters {
+  position: relative;
+  z-index: 100; }
+  .form-filters.show .dropdown-toggle-filter {
+    font-size: 16px; }
+    .form-filters.show .dropdown-toggle-filter .i-close {
+      display: inline-block; }
+    .form-filters.show .dropdown-toggle-filter .i-filter {
+      display: none; }
 

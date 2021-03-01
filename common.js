@@ -40,7 +40,6 @@
 
 	$(document).on('click', '.dropdown-filters', function (e) {
 		e.stopPropagation();
-		return false;
 	});
 
 	$(document).on('click', '.rating-stars-container .fa-star', function(e) {
