@@ -8774,6 +8774,22 @@ input::-webkit-inner-spin-button {
     .header-nav a.active {
       border-bottom: 2px solid #ffe924; }
 
+.header-cart {
+  position: relative; }
+  .header-cart span {
+    position: absolute;
+    left: 18px;
+    top: -6px;
+    min-width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: #ffe924;
+    font-size: 12px;
+    text-align: center;
+    color: #333333;
+    font-family: 'open_sansbold';
+    line-height: 21px; }
+
 .dropdown {
   position: absolute;
   z-index: 10; }
@@ -9269,16 +9285,27 @@ footer nav {
   line-height: 27px;
   margin-bottom: 8px; }
 
-@media (min-width: 768px) {
-  .bottom-carousel-title {
-    font-size: 58px;
-    line-height: 113%;
-    margin-bottom: 32px; } }
+.carousel-btn {
+  min-width: auto;
+  width: 100%; }
+
+.carousel-item {
+  height: 309px;
+  overflow: hidden;
+  position: relative; }
+  .carousel-item img {
+    position: absolute;
+    height: 309px;
+    width: auto; }
 
 .carousel-caption {
   text-align: left;
   top: 0;
-  bottom: 0; }
+  bottom: 0;
+  font-size: 14px;
+  line-height: 21px;
+  left: 15px;
+  right: 15px; }
 
 .carousel-control {
   position: absolute;
@@ -9312,6 +9339,60 @@ footer nav {
   opacity: 1; }
   .carousel-indicators li.active {
     background-color: #ffe924; }
+
+@media (min-width: 768px) {
+  .carousel-btn {
+    min-width: 330px;
+    width: auto; }
+  .carousel-item {
+    height: 510px; }
+    .carousel-item img {
+      height: 510px; }
+  .carousel-caption {
+    text-align: left;
+    top: 0;
+    bottom: 0;
+    left: 15%;
+    right: 15%;
+    font-size: 16px;
+    line-height: 24px; }
+  .carousel-control {
+    position: absolute;
+    left: 15%;
+    right: 15%;
+    height: 56px;
+    bottom: 0; }
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 56px;
+      background-color: rgba(255, 255, 255, 0.6);
+      z-index: 20;
+      opacity: 1;
+      transition: background-color linear 300ms; }
+      .carousel-control-prev:hover, .carousel-control-next:hover {
+        background-color: #ffe924; }
+    .carousel-control-prev-icon {
+      background-image: url(../images/icon_arrow-right.svg);
+      transform: rotate(180deg);
+      height: 24px;
+      width: 24px; }
+    .carousel-control-next-icon {
+      background-image: url(../images/icon_arrow-right.svg);
+      height: 24px;
+      width: 24px; }
+  .carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    background-color: #0e0e0e;
+    opacity: 1; }
+    .carousel-indicators li.active {
+      background-color: #ffe924; } }
+
+@media (min-width: 992px) {
+  .bottom-carousel-title {
+    font-size: 58px;
+    line-height: 113%;
+    margin-bottom: 32px; } }
 
 .cart-product-img {
   width: 76px;
