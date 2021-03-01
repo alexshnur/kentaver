@@ -9146,6 +9146,31 @@ footer nav {
   .rating-stars-container[data-rating="5"] .fa:nth-child(-n+5) {
     color: #fdbd41; }
 
+.rating-stars[value="1"] + .rating-stars-container .fa {
+  cursor: pointer; }
+  .rating-stars[value="1"] + .rating-stars-container .fa:nth-child(-n+1) {
+    color: #fdbd41; }
+
+.rating-stars[value="2"] + .rating-stars-container .fa {
+  cursor: pointer; }
+  .rating-stars[value="2"] + .rating-stars-container .fa:nth-child(-n+2) {
+    color: #fdbd41; }
+
+.rating-stars[value="3"] + .rating-stars-container .fa {
+  cursor: pointer; }
+  .rating-stars[value="3"] + .rating-stars-container .fa:nth-child(-n+3) {
+    color: #fdbd41; }
+
+.rating-stars[value="4"] + .rating-stars-container .fa {
+  cursor: pointer; }
+  .rating-stars[value="4"] + .rating-stars-container .fa:nth-child(-n+4) {
+    color: #fdbd41; }
+
+.rating-stars[value="5"] + .rating-stars-container .fa {
+  cursor: pointer; }
+  .rating-stars[value="5"] + .rating-stars-container .fa:nth-child(-n+5) {
+    color: #fdbd41; }
+
 .review-container {
   background: #ffffff;
   box-shadow: 0 14px 34px rgba(99, 91, 59, 0.2); }
