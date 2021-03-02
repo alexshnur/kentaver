@@ -9176,13 +9176,14 @@ footer nav {
   box-shadow: 0 14px 34px rgba(99, 91, 59, 0.2); }
 
 .review-content {
-  padding: 32px;
+  padding: 16px;
   min-height: 313px;
   max-height: 313px; }
 
 .review-text {
   font-size: 14px;
-  line-height: 21px; }
+  line-height: 21px;
+  height: 133px; }
 
 .review-date {
   font-size: 12px;
@@ -9193,8 +9194,8 @@ footer nav {
 
 .review-product-link-container {
   display: flex;
-  min-height: 92px;
-  max-height: 92px;
+  min-height: 57px;
+  max-height: 57px;
   background-color: #eaeaea;
   font-size: 10px;
   font-family: 'montserratbold';
@@ -9202,7 +9203,7 @@ footer nav {
   color: #000000;
   position: relative;
   transition: background-color linear 300ms;
-  padding-right: 56px; }
+  padding-right: 32px; }
   .review-product-link-container:hover {
     color: #000000;
     text-decoration: none;
@@ -9210,30 +9211,49 @@ footer nav {
   .review-product-link-container:after {
     content: "";
     display: inline-block;
-    width: 24px;
-    height: 24px;
+    width: 13px;
+    height: 13px;
     background: url(../images/icon_arrow-right.svg) no-repeat 0 0;
+    background-size: contain;
     position: absolute;
     top: 16px;
-    right: 16px; }
+    right: 9px; }
 
 .review-product-link-image {
   display: block;
-  min-width: 75px;
-  max-width: 75px;
-  height: 92px;
+  min-width: 53px;
+  max-width: 53px;
+  height: 57px;
   background: no-repeat center center;
   background-size: cover; }
 
 .review-product-link-title {
-  padding: 16px 0 16px 16px;
-  display: block; }
+  margin: 11px 0 11px 11px;
+  height: 33px; }
+  .review-product-link-title p {
+    margin-bottom: 0; }
 
 @media (min-width: 768px) {
+  .review-text {
+    height: 166px; }
+  .review-content {
+    padding: 32px; }
   .review-product-link-container {
-    font-size: 12px; }
+    min-height: 92px;
+    max-height: 92px;
+    font-size: 12px;
+    padding-right: 56px; }
+    .review-product-link-container:after {
+      width: 24px;
+      height: 24px;
+      right: 16px; }
   .review-product-link-title {
-    padding: 16px 0 16px 16px; } }
+    margin: 16px 0 16px 16px;
+    height: 53px; }
+  .review-product-link-image {
+    min-width: 75px;
+    max-width: 75px;
+    height: 92px; } }
 
 .main-image-menu {
   height: 245px;
