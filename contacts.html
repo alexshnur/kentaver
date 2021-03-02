@@ -64,10 +64,13 @@
     </header>
     <main>
       <div class="container">
-        <nav class="d-none d-md-block">
-          <ol class="breadcrumb">
+        <nav>
+          <ol class="breadcrumb d-none d-md-block">
             <li class="breadcrumb-item"><a href="index.html">Головна</a></li>
             <li class="breadcrumb-item active">Поймавший гигантскую форель рыбак установил рекорд</li>
+          </ol>
+          <ol class="breadcrumb d-block d-md-none breadcrumb-mobile">
+            <li class="breadcrumb-item"><a href="index.html">Головна</a></li>
           </ol>
         </nav>
       </div>
@@ -102,10 +105,10 @@
                     <textarea class="form-control" placeholder="Повідомлення" rows="5"></textarea>
                   </div>
                   <div class="row align-items-center">
-                    <div class="col-auto">
-                      <button class="btn btn-warning">відправити</button>
+                    <div class="col-12 col-md-auto order-1 order-md-0 text-center text-md-left">
+                      <button class="btn btn-warning shadow">відправити</button>
                     </div>
-                    <div class="col-auto">
+                    <div class="col-auto order-0 order-md-1 mb-4 mb-md-0">
                       <div class="custom-control custom-checkbox">
                         <input class="custom-control-input" id="privatePolicy" type="checkbox">
                         <label class="small custom-control-label" for="privatePolicy">Я погоджуюсь з<br><a href="#">політикою конфіденційності</a></label>
@@ -181,7 +184,7 @@
     <div class="modal fade show" id="reviewModal">
       <div class="modal-dialog modal-dialog-centered modal-lg">
         <div class="modal-content">
-          <div class="modal-body p-5">
+          <div class="modal-body p-md-5 p-2">
                 <h2 class="center-title"><span>залишити відгук</span></h2>
             <div class="container-fluid">
               <div class="mb-3">

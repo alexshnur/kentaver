@@ -8429,7 +8429,7 @@ a {
 
 .h2 {
   font-family: 'open_sansbold';
-  font-size: 26px;
+  font-size: 18px;
   font-weight: normal;
   letter-spacing: 0.05em; }
 
@@ -9004,6 +9004,20 @@ footer nav {
     font-size: 12px; }
   footer .bg-dark {
     font-size: 14px; } }
+
+.breadcrumb-mobile .breadcrumb-item {
+  font-size: 12px;
+  color: #333333;
+  display: flex;
+  align-items: center; }
+  .breadcrumb-mobile .breadcrumb-item:before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(../images/icon_back.svg) no-repeat 0 0; }
+  .breadcrumb-mobile .breadcrumb-item a {
+    color: #333333; }
 
 .product-stars-container .rating-stars-container {
   font-size: 24px !important;
