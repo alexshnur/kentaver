@@ -8492,7 +8492,6 @@ a {
       transform: scale(1.1429); }
     .btn-warning:focus {
       background-color: #ffe924;
-      transform: scale(1.1429);
       box-shadow: none; }
   .btn-dark {
     color: #ffffff; }
@@ -8503,7 +8502,6 @@ a {
     .btn-dark:focus {
       color: #ffe924;
       background-color: #171717;
-      transform: scale(1.1429);
       box-shadow: none; }
   .btn-arrow-right {
     position: relative;
