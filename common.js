@@ -11,6 +11,15 @@
 }(function ($) {
 	'use strict';
 
+	if (typeof $ !== 'undefined') {
+		$.fn.dotdotdot = function (options) {
+			return this.each(function (e, element) {
+				let dot = new Dotdotdot(element, options);
+				element['dotdotdot'] = dot.API;
+			});
+		};
+	}
+
 	$.fn.exists = function () {
 		return this.length !== 0;
 	};
@@ -56,9 +65,10 @@
 		var $mainReviews = $('.main-reviews');
 
 		if ($mainReviews.exists()) {
-			if (windowWidth < 768) {
+			if (windowWidth <= 768) {
 				$mainReviews.slick({
-					centerMode: true
+					centerMode: true,
+					centerPadding: '40px'
 				});
 			} else {
 				$mainReviews.slick('unslick');
@@ -70,6 +80,14 @@
 		detectMainReviews();
 	});
 
+	$(document).on('DOMContentLoaded', function() {
+		$('.dotdotdot').dotdotdot({
+			truncate: 'word'
+		});
+		$('.review-product-link-title').dotdotdot({
+			truncate: 'word'
+		});
+	});
 
 	$(function () {
 		$mainImageMenu = $('.main-image-menu');
