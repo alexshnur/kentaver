@@ -8709,6 +8709,30 @@ input::-webkit-inner-spin-button {
   .slick-dots li.slick-active button {
     background-color: #FFE924; }
 
+@media (min-width: 768px) {
+  .about-us-img-1 {
+    height: 555px;
+    position: relative; }
+    .about-us-img-1 img {
+      max-width: initial;
+      height: 500px;
+      width: 946px;
+      position: absolute;
+      margin: auto;
+      top: 0; }
+  .about-us-img-2 {
+    height: 611px;
+    position: relative; }
+    .about-us-img-2 img {
+      max-width: initial;
+      height: 500px;
+      width: 946px;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      right: 0; } }
+
 .i {
   display: inline-block;
   width: 32px;
