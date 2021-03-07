@@ -9060,12 +9060,19 @@ footer nav {
 
 .product-item {
   margin-bottom: 50px; }
+  .product-item a:hover .product-item-image {
+    z-index: 0; }
+    .product-item a:hover .product-item-image.hover {
+      z-index: 1; }
   .product-item-image {
+    z-index: 1;
     background: no-repeat center center;
     background-size: cover;
     height: 203px;
     position: absolute;
     width: 100%; }
+    .product-item-image.hover {
+      z-index: 0; }
     .product-item-image-container {
       height: 203px;
       position: relative; }
