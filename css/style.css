@@ -8699,6 +8699,16 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none; }
 
+.slick-dots li {
+  width: auto;
+  height: auto; }
+  .slick-dots li button {
+    width: 10px;
+    height: 10px;
+    background-color: #0e0e0e; }
+  .slick-dots li.slick-active button {
+    background-color: #FFE924; }
+
 .i {
   display: inline-block;
   width: 32px;
@@ -9267,14 +9277,29 @@ footer nav {
     max-width: 75px;
     height: 92px; } }
 
+.main-image-indicators {
+  margin: 10px auto;
+  list-style: none;
+  display: flex;
+  padding: 0;
+  justify-content: center; }
+  .main-image-indicators li {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    background-color: #0e0e0e; }
+    .main-image-indicators li.active {
+      background-color: #FFE924; }
+
 .main-image-menu {
   height: 245px;
   list-style: none;
   padding: 0;
-  margin: 0 8px; }
+  margin: 0 8px;
+  overflow: hidden; }
   .main-image-menu-section {
     position: relative;
-    height: 245px;
+    height: 295px;
     overflow: hidden; }
   .main-image-menu li {
     height: 110px;
@@ -9390,6 +9415,8 @@ footer nav {
     width: 24px; }
 
 .carousel-indicators li {
+  margin-left: 5px;
+  margin-right: 5px;
   width: 10px;
   height: 10px;
   background-color: #0e0e0e;
