@@ -8709,6 +8709,9 @@ input::-webkit-inner-spin-button {
   .slick-dots li.slick-active button {
     background-color: #FFE924; }
 
+.slick-vertical .slick-slide {
+  outline: none; }
+
 @media (min-width: 768px) {
   .about-us-img-1 {
     height: 555px;
@@ -9109,6 +9112,8 @@ footer nav {
   .product-item-none .product-item-image {
     filter: grayscale(1);
     opacity: 0.2; }
+    .product-item-none .product-item-image.hover {
+      display: none !important; }
   .product-item-none .product-item-none-text {
     display: block;
     position: absolute;
