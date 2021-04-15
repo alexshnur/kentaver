@@ -8637,6 +8637,12 @@ a {
   .size-checkbox .custom-control-label:before, .size-checkbox .custom-control-label:after {
     display: none; }
 
+.catalog-sizes-form .size-checkbox .custom-control-label {
+  font-size: 12px;
+  line-height: 16px;
+  padding: 6px 12px;
+  height: 30px; }
+
 .img-fluid {
   width: 100%; }
 
@@ -9079,11 +9085,13 @@ footer nav {
   font-size: 14px;
   line-height: 21px; }
   .product-list li {
+    margin-left: 20px;
     margin-bottom: 21px; }
     .product-list li:before {
       content: "\2B25";
-      margin-right: 10px;
-      color: #ffe924; }
+      margin-right: 8px;
+      color: #ffe924;
+      margin-left: -20px; }
 
 .product-item {
   margin-bottom: 50px; }
